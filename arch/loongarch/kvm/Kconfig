@@ -30,6 +30,9 @@ config KVM
 	select HAVE_KVM_READONLY_MEM
 	select KVM_XFER_TO_GUEST_WORK
 	select SCHED_INFO
+	select HAVE_KVM_IRQ_ROUTING
+	select HAVE_KVM_IRQCHIP
+	select HAVE_KVM_MSI
 	help
 	  Support hosting virtualized guest machines using
 	  hardware virtualization extensions. You will need
